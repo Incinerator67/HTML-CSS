@@ -1,0 +1,39 @@
+/*цвет,задний план, и размер*/
+.ColoursAndBackground{
+  color: blueviolet;background: grey;
+}
+#WithSize{
+  color: aquamarine;background: pink;font-size: 23px;
+}
+/*границы*/
+.border{
+  color: brown;background: yellow;border: 4px double black;line-height: 1.3em;
+}
+#jojoborder{
+  font-family:Arial, Helvetica, sans-serif;line-height: 1.2em;border: 4px double red;
+}
+/*transform*/
+.transform{
+  color: blueviolet;background: grey;text-transform: unset;
+}
+/*hex*/
+.HEX{
+  color:#f5f5dc;background: #000000;line-height: 1.7em;width: 110%;
+}
+#hex{
+  color: #ff0000;background: #222;
+}
+/*background-color*/
+*{
+  margin: 0;
+  padding: 10px;
+  background-color: black;
+}
+/*rgb,rgba and selector grouping*/
+/*and pixels/procent too*/
+em,p {
+  color: rgb(188, 185, 185);
+  background: rgba(0, 0, 0, 0);
+  padding: 10px;
+  border-radius: 25%;
+}
