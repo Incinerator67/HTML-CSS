@@ -26,7 +26,7 @@
   padding: 20px;
 }
 p{
-  padding-top: 60px;
+  padding-top: 6px;
 }
 /*horizont*/
 .inline {
@@ -35,6 +35,14 @@ p{
   border-color: white;
   text-align: right;
 }
-body {
+body{
   text-align: left;
+}
+/*display*/
+.block{
+  background: blue;
+  display: inline;
+}
+.inline {
+  display: inline-block;
 }
