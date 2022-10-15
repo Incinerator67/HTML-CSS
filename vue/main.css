@@ -1,0 +1,26 @@
+*{margin: 0;padding: 0;}
+.container{
+  background-color: rgb(170, 170, 229);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;text-align: center;
+}
+h1{
+  display:inline;
+  color: red;
+  background-color: aquamarine;
+  border-radius: 40px;
+}
+.primary{
+  color: white;
+  background-color:green;
+  border-color: green;
+  border-radius: 40px;
+}
+.danger{
+  color: white;
+  background-color:coral;
+  border-color: coral;
+  border-radius: 40px;
+}
