@@ -1,0 +1,61 @@
+/*background*/
+*{
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+.layer{
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+.img1{
+  background: url("../images/coffee-beans.jpg");
+  background-repeat: round;
+  background-size: cover;
+  background-repeat: repeat-x; 
+  background-repeat: repeat-y; 
+}
+.img2 {
+  margin: 20px;
+  border: 2px solid black;
+  background: url("../images/coffee-bear.jpg");
+  background-repeat: no-repeat; 
+  background-position: 100% 100%;
+}
+.img3 {
+  margin-top: 200px;
+  margin-left: 200px;
+  background: url("../images/coffee-beans.jpg");
+  background-size: contain;
+  background-repeat: space; 
+}
+/*linear-gradient*/
+.gradient{
+  width: 150px;
+  height: 150px;
+  background: linear-gradient(to bottom left, white ,black);
+}
+.banner{
+  width: 40%;
+  height: 40%;
+  border: 4px;
+  float: right;
+}
+/*position*/
+.emm{
+  clear: right;
+  border: 3px solid red;
+  position: static;
+}
+#emmm{
+  color: blueviolet;
+  position: relative;
+  bottom: 50px;
+}
+#emmmm{
+  background:green;
+  font-size: 20px;
+  position: absolute;
+}
