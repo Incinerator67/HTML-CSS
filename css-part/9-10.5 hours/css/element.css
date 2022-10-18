@@ -1,0 +1,81 @@
+/*Before And ::After Pseudo Elements*/
+*{
+  margin: 10px;
+  padding: 0;
+  
+}
+p::before{
+  content: "Start ";
+  font-size: 20px;
+}
+p::after{
+  content: "end ";
+  display: block;
+  color: aquamarine;
+}
+.layer{
+  width: 60vw;
+  margin: 100px auto;
+  position: relative;
+}
+.hm{width: 100%;
+  display: block;
+}
+.layer::before{
+  content: ""; 
+  width: 100%;
+  height: 100%;
+  position: absolute; 
+  border:4px solid green;
+  box-sizing: border-box;
+  z-index: -2;
+  top: 150px;
+  left: 150px;
+  transition: all 0.5s linear;
+}
+.layer::after{
+  content: ""; 
+  width: 100%;
+  height: 100%;
+  position: absolute; 
+  background: red;
+  box-sizing: border-box;
+  z-index: -1;
+  top: 75px;
+  left: +75px;
+  transition: all 0.5s linear;
+}
+.layer:hover::before,
+.layer:hover::after{
+  top: 0;
+  left: 0;
+}
+/* Transform*/
+.one{
+  width: 100px;
+  background-color: aquamarine;
+  transform: translate(+25px, -10px);
+  /* тоже самое, толко по оси X = transform:translateX(+25px);*/
+  /* тоже самое, толко по оси Y = transform:translateY(-10px);*/
+  transform: skew(135deg);
+}
+.two{
+  width: 100px;
+  background-color:blue;
+  transform: scale(0.5, 0.5);
+  /* тоже самое, толко c осью X = transform:scaleX(0.5);*/
+  /* тоже самое, толко c осью Y = transform:scaleY(0.5);*/
+  transform: rotate(165deg);
+}
+/*Transition Property*/
+.three:hover{background: chartreuse; border-radius: 50%;transform: translateX(100px);}
+.three{
+  width: 100px;
+  height: 100px;
+  background-color: blueviolet;
+  transition-property: background, border-radius;
+  transition-duration: 2s;
+  transition-delay: 0.5s;
+  padding-left: 50px;
+  transition: all 1s ease;
+}
